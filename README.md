@@ -79,6 +79,6 @@ This is where you'll see people you want to collaborate with, who also want to c
 
 ## Who made it?
 
-**David Stegler**
-**Sam Cotter**
-**Mike Dwyer**
+* **David Stegler**
+* **Sam Cotter**
+* **Mike Dwyer**
