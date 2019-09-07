@@ -7,6 +7,7 @@ const Item = require('../../models/Item')
 // @route   GET api/items
 // @desc    Retrieve all items
 // @acces   Public
+// this path is really: /api/items/
 router.get('/', (req, res) => {
     // 'Item' is the model we defined above
     Item.find()

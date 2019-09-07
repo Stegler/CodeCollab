@@ -1,6 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const path = require("path");
+const morgan = require("morgan");
 require("dotenv").config();
 
 // Models
@@ -8,6 +10,8 @@ const items = require('./routes/api/items');
 
 
 const app = express();
+
+app.use(morgan('default'));
 
 // Bodyparser Middleware
 app.use(bodyParser.json());
@@ -22,8 +26,18 @@ mongoose
   .then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err));
 
-  // Use Routes | '/api/items' refers to the 'items' variable defined above to access the 'items.js' routes file
-  app.use('/api/items', items)
+// Static files default route
+//app.use(express.static("client/build/index.html"));
+app.use(express.static(path.join(__dirname, 'client/build')));
+
+// Handles any requests that don't match the ones above
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/client/build/index.html'));
+});
+
+
+// Use Routes | '/api/items' refers to the 'items' variable defined above to access the 'items.js' routes file
+app.use('/api/items', items)
 
 const port = process.env.PORT || 3001;
 
