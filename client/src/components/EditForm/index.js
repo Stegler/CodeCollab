@@ -14,6 +14,7 @@ class EditForm extends React.Component {
             lastName: '',
             age: '',
             zip: '',
+            employer: '',
             bio: '',
             skills: ''
         }
@@ -35,7 +36,7 @@ class EditForm extends React.Component {
         const { firstName, lastName, age, zip, bio, skills } = this.state
         return (
             <Container className="form-container">
-                <ProfileImage></ProfileImage><br></br>
+                <ProfileImage image="http://www.grahamcrackersports.com/wp-content/uploads/2016/04/gray.jpg"></ProfileImage><br></br>
                 <Form>
                     {/* First Name input field */}
 
@@ -82,10 +83,25 @@ class EditForm extends React.Component {
                         </Col>
                     </Form.Group>
 
-                    {/* Zip input field */}
+                    {/* Employer input field */}
 
                     <Form.Group as={Row} controlId="location">
-                        <Form.Label column sm={2}>Zip</Form.Label>
+                        <Form.Label column sm={2}>Employer</Form.Label>
+                        <Col sm={10}>
+                            <Form.Control
+                                placeholder="Name"
+                                type="text"
+                                name="location"
+                                value={zip}
+                                onChange={this.changeHandler}
+                            />
+                        </Col>
+                    </Form.Group>
+
+                    {/* Zip Code input field */}
+
+                    <Form.Group as={Row} controlId="location">
+                        <Form.Label column sm={2}>Zip Code</Form.Label>
                         <Col sm={10}>
                             <Form.Control
                                 placeholder="55555"
@@ -137,7 +153,7 @@ class EditForm extends React.Component {
                         <Col >
                             <Button style={{
                                 float: "right"
-                            }}onSubmit={this.submitHandler} href="/profile" type="submit" variant="info" size="lg">Submit</Button>
+                            }} onSubmit={this.submitHandler} href="/profile" type="submit" variant="info" size="lg">Submit</Button>
                         </Col>
                     </Form.Group>
                 </Form>

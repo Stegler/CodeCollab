@@ -29,7 +29,7 @@ class ProfilePage extends React.Component {
         return (
             <div>
                 <Kaskade title={this.state.title} />
-                <Container style={{paddingBottom: "25px"}}>
+                <Container style={{ paddingBottom: "25px" }}>
                     <ProfileImage image={this.state.image} />
                     <Row>
                         <BoxLeft

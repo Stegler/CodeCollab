@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import EditPage from "./pages/EditPage";
 import ProfilePage from "./pages/ProfilePage";
@@ -19,7 +20,7 @@ class App extends React.Component {
       <Router>
         <div>
           <Navigation />
-          <Switch>
+          <Switch >
             <Route exact path="/" component={HomePage} />
             <Route exact path="/edit" component={EditPage} />
             <Route exact path="/profile" component={ProfilePage} />
