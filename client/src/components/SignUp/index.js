@@ -87,7 +87,7 @@ class SignUp extends React.Component {
 
           <Form.Group as={Row}>
             <Col >
-              <Button style={{float: "right"}} onSubmit={this.submitHandler} type="submit" variant="info" size="lg">Submit</Button>
+              <Button style={{float: "right"}} onSubmit={this.submitHandler} type="submit" href="/edit" variant="info" size="lg">Submit</Button>
             </Col>
           </Form.Group>
         </Form>

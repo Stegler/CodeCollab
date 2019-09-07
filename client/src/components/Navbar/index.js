@@ -13,7 +13,7 @@ export default function Navigation() {
           <Nav.Link href="/search">Browse</Nav.Link>
           <Nav.Link href="/matches">Matches</Nav.Link>
         </Nav>
-      <Nav.Link style= {{ color: "white" }} href="#memes">Welcome, David</Nav.Link>
+      <Nav.Link style= {{ color: "white" }} href="#memes">Welcome, Spongebob</Nav.Link>
       </Navbar>
   );
 };

@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -10,4 +10,8 @@ div[data-reactroot] {
   height: 100%;
   padding: 0;
   margin: 0;
+} */
+
+#grad {
+  background-image: linear-gradient(to bottom right, red, yellow);
 }
