@@ -10,8 +10,6 @@ function BoxMiddle(props) {
         <Container>
           <h1>Bio</h1>
           <p>{props.bio}</p>
-
-
         </Container>
       </Col>
     )
