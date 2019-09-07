@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import EditPage from "./pages/EditPage";
 import ProfilePage from "./pages/ProfilePage";
 import HomePage from "./pages/HomePage";
+import MatchesPage from "./pages/MatchesPage";
 import SearchPage from "./pages/SearchPage";
 import SignUpPage from "./pages/SignUpPage";
 import Navigation from "./components/Navbar";
-import Footer from "./components/Footer";
 
 class App extends React.Component {
   state = {
@@ -24,10 +24,9 @@ class App extends React.Component {
             <Route exact path="/edit" component={EditPage} />
             <Route exact path="/profile" component={ProfilePage} />
             <Route exact path="/search" component={SearchPage} />
+            <Route exact path="/matches" component={MatchesPage} />
             <Route exact path="/signup" component={SignUpPage} />
           </Switch>
-          <br></br>
-          <Footer />
         </div>
       </Router >
     );

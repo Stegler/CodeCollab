@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Col, Button, Row, Container } from 'react-bootstrap';
 import "./style.css";
+import ProfileImage from '../ProfileImage';
 
 // className="block-example border border-primary"
 
@@ -34,6 +35,7 @@ class EditForm extends React.Component {
         const { firstName, lastName, age, zip, bio, skills } = this.state
         return (
             <Container className="form-container">
+                <ProfileImage></ProfileImage><br></br>
                 <Form>
                     {/* First Name input field */}
 
@@ -135,7 +137,7 @@ class EditForm extends React.Component {
                         <Col >
                             <Button style={{
                                 float: "right"
-                            }}onSubmit={this.submitHandler} type="submit" variant="info" size="lg">Submit</Button>
+                            }}onSubmit={this.submitHandler} href="/profile" type="submit" variant="info" size="lg">Submit</Button>
                         </Col>
                     </Form.Group>
                 </Form>

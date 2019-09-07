@@ -18,11 +18,10 @@ class SearchPage extends React.Component {
             // masterList: [],
             title: 'Browse',
             firstName: 'Mr.',
-            lastName: 'Crabs',
+            lastName: 'Krabs',
             age: '40',
-            employment: 'GrubHub',
-            zip: '98516',
-            bio: 'Hello, my name is Mr. Krabs.',
+            employment: 'Krusty Krab',
+            bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu leo vitae lectus ultricies maximus et vitae risus. In sagittis venenatis dolor, vel laoreet massa consequat et. Nunc tempor aliquam leo, at auctor sem tempus vulputate. Suspendisse nec ante eros. Suspendisse potenti. Integer at posuere orci. Etiam a ipsum ut nisi finibus lobortis at at eros. Donec mattis varius lectus sed ultricies. Praesent eros lectus, sollicitudin at lacus vel, congue interdum diam. Duis tristique libero mi, sed tristique velit tincidunt vitae. Aliquam erat volutpat. Duis placerat, ipsum eu lobortis porttitor, nisi sem rhoncus nulla, vel faucibus sapien erat id lorem. Sed leo ex, consectetur in dolor vel, porttitor viverra odio. Praesent tellus nunc, luctus vel lacus in, gravida ullamcorper sapien. Duis sed lorem imperdiet, pellentesque est fringilla, dictum urna. Suspendisse erat ante, aliquam sit amet consectetur ut, blandit eget lectus. Sed eu rhoncus mauris. Mauris ultrices eu augue vel efficitur. Etiam ac felis eget lorem imperdiet facilisis a vel velit. Nulla nibh purus, ultricies non tortor sit amet, efficitur maximus libero. Praesent volutpat lectus vitae turpis tincidunt, vel vulputate enim luctus. Suspendisse risus diam, scelerisque a dui eget, elementum vehicula turpis. Suspendisse fermentum quam metus, vel molestie lorem ultricies eu. Ut quis urna odio.',
             skills: 'JavaScript, React, Mongo, Express, Java, mySQL, Mongoose, Axios, jQuery, PHP, C++',
             image: 'https://i0.wp.com/metro.co.uk/wp-content/uploads/2017/11/pri_61620655.jpg?quality=90&strip=all&zoom=1&resize=644%2C480&ssl=1'
         }
@@ -32,7 +31,7 @@ class SearchPage extends React.Component {
         return (
             <div>
                 <Kaskade title={this.state.title} />
-                <Container>
+                <Container style={{paddingBottom: "25px"}}>
                     <Button className="buttonShadow" variant="danger" size="lg" style={{ float: "left", marginLeft: "150px", marginTop: "180px", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" }}><MDBIcon icon="times" /></Button>
                     <Button className="buttonShadow" variant="success" size="lg" style={{ float: "right", marginRight: "150px", marginTop: "180px", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" }}><MDBIcon icon="check" /></Button>
                     <ProfileImage image={this.state.image} />
