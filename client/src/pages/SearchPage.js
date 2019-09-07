@@ -16,7 +16,7 @@ class SearchPage extends React.Component {
 
         this.state = {
             // masterList: [],
-            title: 'Search',
+            title: 'Browse',
             firstName: 'Mr.',
             lastName: 'Crabs',
             age: '40',
@@ -33,21 +33,25 @@ class SearchPage extends React.Component {
             <div>
                 <Kaskade title={this.state.title} />
                 <Container>
-                    <Button variant="danger" size="lg" style={{float: "left"}}><MDBIcon icon="times" /></Button>
-                    <Button variant="success" size="lg" style={{float: "right"}}><MDBIcon fab icon="connectdevelop" /></Button>
-                    <ProfileImage image={this.state.image}/>
+                    <Button className="buttonShadow" variant="danger" size="lg" style={{ float: "left", marginLeft: "150px", marginTop: "180px", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" }}><MDBIcon icon="times" /></Button>
+                    <Button className="buttonShadow" variant="success" size="lg" style={{ float: "right", marginRight: "150px", marginTop: "180px", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" }}><MDBIcon icon="check" /></Button>
+                    <ProfileImage image={this.state.image} />
                     <Row>
-                        <BoxLeft  
-                        firstName={this.state.firstName}
-                        lastName={this.state.lastName}
-                        age={this.state.age}
-                        employment={this.state.employment}
+                        <BoxLeft
+                            firstName={this.state.firstName}
+                            lastName={this.state.lastName}
+                            age={this.state.age}
+                            employment={this.state.employment}
                         />
+                    </Row>
+                    <Row>
                         <BoxMiddle
-                        bio={this.state.bio} 
+                            bio={this.state.bio}
                         />
-                        <BoxRight 
-                        skills={this.state.skills}
+                    </Row>
+                    <Row>
+                        <BoxRight
+                            skills={this.state.skills}
                         />
                     </Row>
                 </Container>

@@ -31,7 +31,7 @@ class SignUp extends React.Component {
   render() {
     const { firstName, lastName, email, password } = this.state
     return (
-      <Container>
+      <Container className="signup-container">
         <Form>
           <Form.Group as={Row} controlId="firstname">
             <Form.Label column sm={2}>First Name</Form.Label>
@@ -87,7 +87,7 @@ class SignUp extends React.Component {
 
           <Form.Group as={Row}>
             <Col >
-              <Button onSubmit={this.submitHandler} type="submit" variant="info" size="lg" block>Submit</Button>
+              <Button style={{float: "right"}} onSubmit={this.submitHandler} type="submit" variant="info" size="lg">Submit</Button>
             </Col>
           </Form.Group>
         </Form>

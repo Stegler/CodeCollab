@@ -10,7 +10,7 @@ export default function Navigation() {
         <Nav className="mr-auto">
           <Nav.Link href="/profile">Profile</Nav.Link>
           <Nav.Link href="/edit">Edit</Nav.Link>
-          <Nav.Link href="/search">Search</Nav.Link>
+          <Nav.Link href="/search">Browse</Nav.Link>
           <Nav.Link href="/search">Matches</Nav.Link>
         </Nav>
       <Nav.Link style= {{ color: "white" }} href="#memes">Welcome, David</Nav.Link>

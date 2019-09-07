@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { Container, Button, Col } from 'react-bootstrap';
+import { Container, Col } from 'react-bootstrap';
 import { MDBIcon } from 'mdbreact';
 
 // className="block-example border border-primary"
@@ -8,13 +8,12 @@ import { MDBIcon } from 'mdbreact';
 function BoxLeft(props) {
     return (
       <Col className="left-container">
+          <h1><MDBIcon style={{ float: "right", marginTop: "15px", marginRight: "20px" }} fab icon="github" /></h1>
+          <h1><MDBIcon style={{ float: "right", marginTop: "7px", marginRight: "15px" }} fab icon="linkedin" /></h1>
         <Container>
-          <h1>{props.firstName}</h1>
-          <h4>{props.lastName}</h4>
-          <h1>{props.age}</h1>
-          <h2>{props.employment}</h2>
-          <Button onSubmit="null" type="submit" variant="info" size="lg" block><MDBIcon fab icon="github" className="pr-1" />Github</Button>
-          <Button style={{marginTop: 10, marginBottom: 10}} onSubmit="null" type="submit" variant="info" size="lg" block><MDBIcon fab icon="linkedin" className="pr-1" />LinkedIn</Button>
+          <h1>{props.firstName} {props.lastName}</h1>
+          <h2><MDBIcon icon="user" /> {props.age}</h2>
+          <h2><MDBIcon icon="briefcase" /> {props.employment}</h2>
         </Container>
       </Col>
     )
