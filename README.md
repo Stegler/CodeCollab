@@ -4,7 +4,7 @@ A match finder app for developers! Got a sweet project in mind, but don't quite 
 
 ## Launching the app
 
-It's deployed on Heroku -- check it out at this link:
+It's deployed on Heroku -- check it out at this link: https://codecollabuwbootcamp.herokuapp.com/ 
 
 <insert Heroku link>
 
@@ -15,8 +15,6 @@ npm i
 ```
 
 **Tip**: You should see a **node_modules** directory in both the "root" *and* "client" directories.
-
-...or, just access it on https://codecollabuwbootcamp.herokuapp.com/ 
 
 ## Signing up
 
