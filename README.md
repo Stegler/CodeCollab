@@ -16,7 +16,7 @@ npm i
 
 **Tip**: You should see a **node_modules** directory in both the "root" *and* "client" directories.
 
-...or, just access it on [Heroku]insert Heroku link)! 
+...or, just access it on https://codecollabuwbootcamp.herokuapp.com/ 
 
 ## Signing up
 
@@ -82,3 +82,5 @@ This is where you'll see people you want to collaborate with, who also want to c
 * **David Stegler**
 * **Sam Cotter**
 * **Mike Dwyer**
+
+Not all parts of the app may be functioning at this time, still a work in progress!
